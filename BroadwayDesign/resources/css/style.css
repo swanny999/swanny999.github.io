@@ -3,25 +3,31 @@
   font-family: Helvetica;
 }
 
-h1, h2, h3 {
+a, h1, #footer {
+  color: white;
+}
+
+h3 {
+  font-size: 23px;
   font-weight: bold;
 }
 
 #header, h1 {
-  color: white;
   background-image: url("../media/the-flatiron-building.png");
 }
 
-ul {
-  list-style-type: none;
+p {
+  font-size: 14px;
 }
+ p a {
+   font-size: 18px;
+ }
 
 #footer {
-  color: white;
   background-color: dimgray;
-  font-size: 11px;
 }
 
-#footer p {
+#footer p, #footer p a {
   text-align: left;
+  font-size: 11px;
 }
