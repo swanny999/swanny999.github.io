@@ -26,10 +26,13 @@ h1 {
   height: 60px;
 }
 
+span a {
+  color: black;
+}
+
 span {
   display: inline-block;
-
-
+  margin-right: 20px;
 }
 
 nav {
