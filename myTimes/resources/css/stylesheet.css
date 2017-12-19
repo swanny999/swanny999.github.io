@@ -1,16 +1,20 @@
+/*.container, .small, .medium, .large{
+  border: solid 1px black;
+}*/
+
 header {
   display: flex;
   font-family: Verdana;
   font-weight: bold;
   font-size: 14px;
-  height: 60px;
+  height: 90px;
   border-bottom: solid 1px black;
   width: 100%;
   align-items: center;
 }
 
 header img {
-  height: 50px;
+  height: 60px;
   margin: auto 0;
 }
 
@@ -23,7 +27,7 @@ h1 {
 
 #logo {
   display: flex;
-  height: 60px;
+  height: 100%;
 }
 
 span a {
@@ -37,4 +41,21 @@ span {
 
 nav {
   margin-left: auto;
+}
+
+.container {
+  display: flex;
+  /*width: 100%;*/
+}
+
+.container .large {
+  width: 630px;
+}
+
+.container .medium {
+  width: 300px;
+}
+
+.container .small {
+  width: 240px;
 }
