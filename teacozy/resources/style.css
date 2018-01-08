@@ -1,0 +1,138 @@
+body {
+  background-color: black;
+}
+
+/*Header*/
+header {
+  top: -5px;
+  background-color: black;
+  height: 69px;
+  display: flex;
+  font-size: 22px;
+  color: seashell;
+  align-items: center;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+header img {
+  opacity: .9;
+  height: 50px;
+  margin-left: 10px;
+}
+
+header a {
+  color: seashell;
+  opacity: 0.9;
+  margin-right: 10px;
+}
+header nav {
+  margin-right: 10px;
+}
+
+/*Body*/
+container, footer {
+  z-index: 5;
+  position: relative;
+  top: 64px;
+  color: seashell;
+  opacity: 0.9;
+}
+
+/*Main Large Image*/
+container #main {
+  width: 1200px;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  height: 700px;
+  font-size: 22px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#main div {
+  background-color: black;
+  width: 1200px;
+}
+
+/*Tea of the Month */
+#tom {
+  width: 1000px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  font-size: 22px;
+}
+
+#teas {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tea {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.tea img {
+  height: 200px;
+  width: 300px;
+}
+
+.tea span {
+  margin: 10px;
+}
+
+/*Locations*/
+container #locations {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 22px;
+}
+
+#places {
+  display: flex;
+  justify-content: center;
+}
+
+.address {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 20px;
+  align-items: center;
+}
+
+.address span {
+  margin: 15px;
+}
+
+/*Footer*/
+footer {
+  text-align: center;
+  font-size: 22px;
+}
+
+footer div{
+  text-align: left;
+}
+
+#copyright {
+  margin-left: 20px;
+}
