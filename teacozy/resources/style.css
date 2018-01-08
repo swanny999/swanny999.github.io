@@ -1,5 +1,7 @@
 body {
   background-color: black;
+  font-size: 22px;
+  color: seashell;
 }
 
 /*Header*/
@@ -8,8 +10,6 @@ header {
   background-color: black;
   height: 69px;
   display: flex;
-  font-size: 22px;
-  color: seashell;
   align-items: center;
   border-bottom: 1px solid seashell;
   position: fixed;
@@ -38,7 +38,6 @@ container, footer {
   z-index: 5;
   position: relative;
   top: 64px;
-  color: seashell;
   opacity: 0.9;
 }
 
@@ -47,7 +46,6 @@ container #main {
   width: 1200px;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
   height: 700px;
-  font-size: 22px;
   margin: 0 auto;
   text-align: center;
   display: flex;
@@ -67,7 +65,6 @@ container #main {
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
-  font-size: 22px;
 }
 
 #teas {
@@ -102,7 +99,6 @@ container #locations {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  font-size: 22px;
 }
 
 #places {
@@ -126,7 +122,6 @@ container #locations {
 /*Footer*/
 footer {
   text-align: center;
-  font-size: 22px;
 }
 
 footer div{
