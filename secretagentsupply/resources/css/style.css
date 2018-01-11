@@ -157,6 +157,10 @@ footer {
     width: 100%;
   }
 
+  #desktop {
+    display: flex;
+  }
+
   #mobile {
     display: flex;
   }
@@ -216,6 +220,10 @@ footer {
 
   #smallmobile {
     display: flex;
+  }
+
+  #desktoph {
+    display: none;
   }
 
   #info .container {
