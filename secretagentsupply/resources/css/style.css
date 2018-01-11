@@ -168,7 +168,6 @@ footer {
 
   #mobile .container {
     justify-content: center;
-    width: 100%;
   }
 
   #desktop {
@@ -226,6 +225,7 @@ footer {
 
   #desktoph {
     display: none;
+    width: 100%;
   }
 
   #info .container {
