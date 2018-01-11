@@ -187,7 +187,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 471px) {
+@media only screen and (max-width: 471px), (orientation: portrait) {
   .product {
     width: 90%;
   }
