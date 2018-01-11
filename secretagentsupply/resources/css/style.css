@@ -152,7 +152,7 @@ footer {
   margin-top: 4rem;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 2000px) {
   .container {
     width: 100%;
   }
@@ -179,14 +179,14 @@ footer {
 
 }
 
-@media only screen and (min-width: 471px) and (max-width: 1024px) {
+@media only screen and (min-width: 1080px) and (max-width: 2000px) {
   .product {
     width: 47%;
   }
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1080px) {
   .product {
     width: 90%;
   }
