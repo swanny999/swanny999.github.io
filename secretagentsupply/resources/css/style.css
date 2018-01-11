@@ -28,13 +28,17 @@ header, footer, #mainheader, span{
 
 header img {
   height: 1.5rem;
-  margin;-left: .5rem;
+  margin-left: .5rem;
   margin-right: 1rem;
 }
 
 #header span {
   margin-top: .66rem;
   margin-bottom: .66rem;
+}
+
+#smallmobile {
+  display: none;
 }
 
 /*main*/
@@ -77,6 +81,10 @@ nav .container {
 
 nav .container span {
   background: none;
+}
+
+#mobile {
+  display: none;
 }
 
 /*products*/
@@ -142,4 +150,85 @@ footer {
   display: flex;
   align-items: center;
   margin-top: 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+
+  #mobile {
+    display: flex;
+  }
+
+  #mobile .container {
+    justify-content: center;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  #glasses {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 471px) and (max-width: 1024px) {
+  .product {
+    width: 47%;
+  }
+
+}
+
+@media only screen and (max-width: 470px) {
+  .product {
+    width: 90%;
+  }
+
+  #watch {
+    display: none;
+  }
+
+  .product {
+    margin: auto;
+  }
+
+  #mainheader {
+    width: 100%;
+    top: 10rem;
+    padding: 1rem 2rem;
+  }
+
+  #main {
+    height: 15rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+
+  }
+
+  h4 {
+    font-size: .77rem;
+  }
+
+  #smallmobile {
+    display: flex;
+  }
+
+  #info .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info {
+    width: 90%;
+    margin-bottom: .5rem;
+  }
+
+  footer .container {
+    text-align: center;
+  }
 }
