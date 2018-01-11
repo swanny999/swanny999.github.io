@@ -186,7 +186,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 600px) {
   .product {
     width: 90%;
   }
