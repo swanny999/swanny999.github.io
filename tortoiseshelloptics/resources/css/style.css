@@ -1,0 +1,134 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+.container{
+  width: 960px;
+}
+
+/*header*/
+#headerimage {
+  background-image: url("../images/glasses-bg.png");
+  height: 31rem;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+/*logo and nav bar*/
+#navbar {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cadetblue;
+  margin-top: 1rem;
+}
+
+#logo{
+  display: flex;
+  margin-left: 2rem;
+  align-items: center;
+}
+
+#logo img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+nav {
+  margin: 1rem 2rem;
+  display: flex;
+}
+
+nav span {
+  margin-left: 2rem;
+}
+
+/*heading*/
+#header {
+  background-color: white;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: bold;
+  padding: 1.5rem 5rem;
+  display: inline-block;
+  margin-top: 10rem;
+  position: relative;
+  float: right;
+  left: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/*features*/
+#features {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  width: 5rem;
+  align-items: center;
+  height: 8rem;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#paper {
+  width: 3.5rem;
+}
+
+.rulertruck {
+  width: 4.5rem;
+}
+
+/*info*/
+#info {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.infoblock {
+  width: 35%;
+  margin-right: 2.5%;
+  margin-left: 2.5%
+}
+
+.infohead {
+  font-weight: bold;
+  color: white;
+  background-color: cadetblue;
+  padding: .5rem 1.25rem;
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+
+/*info*/
+footer {
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 4rem;
+  margin-top: 5rem;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
