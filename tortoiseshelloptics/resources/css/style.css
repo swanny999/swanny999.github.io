@@ -11,13 +11,15 @@ html {
 #headerimage {
   background-image: url("../images/glasses-bg.png");
   height: 31rem;
-  background-size: cover;
   display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   justify-content: center;
 }
 
 /*logo and nav bar*/
-#navbar {
+#navbar #noncell {
   display: flex;
   color: white;
   justify-content: space-between;
@@ -44,6 +46,10 @@ nav {
 
 nav span {
   margin-left: 2rem;
+}
+
+#cell {
+  display: none;
 }
 
 /*heading*/
@@ -114,7 +120,7 @@ nav a {
   margin-bottom: 1rem;
 }
 
-/*info*/
+/*footer*/
 footer {
   background-color: azure;
   display: flex;
@@ -131,4 +137,118 @@ footer .container {
 footer img {
   height: 1.5rem;
   margin-right: 1rem;
+}
+
+/*tablet and phone*/
+@media only screen and (max-width: 1050px) {
+  /*nav and logo bar*/
+  .container {
+    width: 100%;
+  }
+
+  #navbar #noncell{
+    margin-top: 0rem;
+  }
+}
+
+/*tablet*/
+@media only screen and (min-width: 750px) and (max-width: 1050px) {
+  /*header image*/
+  #headerimage {
+    height: 22rem;
+  }
+
+  /*header*/
+  #header {
+    padding: .75rem 4rem;
+    font-size: 1.33rem;
+    left: 0;
+    margin-right: 2rem;
+  }
+}
+
+/*phone*/
+@media only screen and (max-width: 750px) {
+  /*logo and navbar*/
+  #navbar #noncell {
+    display: none;
+  }
+
+  #navbar #cell {
+    margin-top: 0rem;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+  }
+
+  /*header image*/
+  #headerimage {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  /*heading*/
+  #header {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 9rem;
+    font-size: 1.33rem;
+    line-height: normal;
+    float: none;
+    display: block;
+    left: 0rem;
+  }
+
+  /*features*/
+  #features {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.77rem;
+  }
+
+  .rulertruck {
+    margin-top: 1.54rem;
+  }
+
+  .feature {
+    font-size: .77rem;
+    height: 7rem;
+  }
+
+  /*info*/
+  #info {
+    flex-direction: column;
+    margin-top: 3.77rem;
+  }
+
+  .infoblock {
+    width: 100%;
+    margin: 0;
+  }
+
+  .infohead {
+    width: 100%;
+    padding: .5rem 0;
+    text-align: center;
+  }
+
+  .infodetail {
+    font-size: .77rem;
+  }
+
+  #philosophydetail {
+    margin-bottom: 4rem;
+  }
+
+  /*footer*/
+  footer img {
+    margin: auto;
+  }
+
+  footer span {
+    display: none;
+  }
 }
