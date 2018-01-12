@@ -168,7 +168,7 @@ footer img {
 }
 
 /*phone*/
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 750px), (orientation: portrait) {
   /*logo and navbar*/
   #navbar #noncell {
     display: none;
@@ -251,4 +251,4 @@ footer img {
   footer span {
     display: none;
   }
-} 
+}
