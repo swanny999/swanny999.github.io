@@ -1,0 +1,23 @@
+html {
+  font-size: 16px;
+  background-color: lightgray;
+}
+
+/*Header*/
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 4rem;
+  align-items: center;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+#logo img {
+  height: 2rem;
+}
