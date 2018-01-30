@@ -1,6 +1,17 @@
 html {
   font-size: 16px;
-  background-color: lightgray;
+  background-color: hsl(60, 22%, 90%);
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*Header*/
@@ -16,8 +27,74 @@ header {
   display: flex;
   align-items: center;
   margin-left: 1.5rem;
+  font-size: 1.5rem;
+  font-family: serif;
 }
 
 #logo img {
   height: 2rem;
+}
+
+.maroon {
+  color: hsl(0, 100%, 35%);
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  margin-right: 1.5rem;
+  font-size: 1.25rem;
+}
+
+nav a {
+  margin: 0 0.5rem;
+  color: black;
+}
+
+nav a:hover {
+  color: hsl(0, 100%, 35%);
+}
+
+/*Jumbotron*/
+.jumbotron {
+  display: flex;
+  background-color: hsla(0, 100%, 35%, 0.8);
+  height: 40rem;
+}
+
+.jumbotron img {
+  width: 60%;
+  height: auto;
+  margin: 2rem 1.5rem;
+}
+
+.jumbotron-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;;
+  width: 30%;
+  color: hsl(0, 0%, 18%);
+  height: 15rem;
+  margin: auto 0;
+}
+
+.jumbotron-header span{
+  font-size: 1.5rem;
+}
+
+#btn {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 500ms linear 0s;
+  color: hsl(60, 22%, 90%);
+}
+
+#btn:hover {
+  color: hsla(0, 100%, 35%, 0.8)
+}
+
+#btn span {
+  padding: 0.5rem;
 }
