@@ -62,20 +62,20 @@ nav a:hover {
   height: 40rem;
 }
 
-.jumbotron img {
-  width: 60%;
-  height: auto;
-  margin: 2rem 1.5rem;
-}
-
 .jumbotron-header {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;;
+  justify-content: space-between;
   width: 30%;
   color: hsl(0, 0%, 18%);
   height: 15rem;
   margin: auto 0;
+}
+
+.jumbotron img{
+  width: 60%;
+  height: auto;
+  margin: 2rem 1.5rem;
 }
 
 .jumbotron-header span{
@@ -87,14 +87,53 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: color 500ms linear 0s;
+  transition: color 250ms linear 0s;
   color: hsl(60, 22%, 90%);
 }
 
 #btn:hover {
-  color: hsla(0, 100%, 35%, 0.8)
+  color: hsla(0, 100%, 35%, 0.8);
 }
 
 #btn span {
   padding: 0.5rem;
+}
+
+/*banners*/
+.banner {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.banner-left {
+  width: 60%;
+  margin: 0 1.5rem;
+}
+
+.main-content {
+  width: 100%;
+  height: auto;
+}
+
+.banner-right {
+  display: flex;
+  flex-direction: column;
+  width:  40%;
+}
+
+.tab {
+  display: flex;
+}
+
+.tab img {
+  width: 35%;
+  height: auto;
+  display: block;
+}
+
+.tab-info {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
