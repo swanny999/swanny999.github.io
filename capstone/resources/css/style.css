@@ -2,6 +2,7 @@ html {
   font-size: 16px;
   background-color: hsl(60, 22%, 90%);
   font-family: sans-serif;
+  color: hsl(0, 0%, 18%);
 }
 
 h1 {
@@ -48,7 +49,6 @@ nav {
 
 nav a {
   margin: 0 0.5rem;
-  color: black;
 }
 
 nav a:hover {
@@ -67,7 +67,6 @@ nav a:hover {
   flex-direction: column;
   justify-content: space-between;
   width: 30%;
-  color: hsl(0, 0%, 18%);
   height: 15rem;
   margin: auto 0;
 }
@@ -102,12 +101,23 @@ nav a:hover {
 /*banners*/
 .banner {
   display: flex;
+}
+
+.banner h1 {
   margin-top: 2rem;
 }
 
 .banner-left {
   width: 60%;
-  margin: 0 1.5rem;
+  margin: 2rem 0;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#bannerinfo {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .main-content {
@@ -118,22 +128,100 @@ nav a:hover {
 .banner-right {
   display: flex;
   flex-direction: column;
-  width:  40%;
+  width: 40%;
+  margin: 1rem 0;
 }
 
 .tab {
   display: flex;
+  transition: background-color 100ms linear 100ms;
 }
 
-.tab img {
+.tab:hover {
+  background-color: hsla(0, 100%, 35%, 0.8);
+}
+
+.image-container {
   width: 35%;
   height: auto;
   display: block;
 }
 
+.image-container img {
+  width: 100%;
+  height: auto;
+  margin: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.tab a {
+  color: hsl(220, 100%, 70%);
+}
+
 .tab-info {
-  width: 65%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 2rem;
+}
+
+.mid {
+  margin: .5rem 0;
+}
+
+/*cards*/
+.cards {
+  background-color: hsla(0, 100%, 35%, 0.8);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards h1 {
+  margin: 2rem 0;
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 4.5rem;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.card {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(60, 22%, 90%);
+  margin-bottom: 2rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-info {
+  margin: 1rem;
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-info span {
+  margin-top: .5rem;
+}
+
+.middle {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
