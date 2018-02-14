@@ -15,7 +15,7 @@ a {
   color: inherit;
 }
 
-/*Header*/
+/*header and nav*/
 header {
   display: flex;
   width: 100%;
@@ -55,7 +55,22 @@ nav a:hover {
   color: hsl(0, 100%, 35%);
 }
 
-/*Jumbotron*/
+/*all sections*/
+.section {
+  display: flex;
+  width: 100%;
+}
+
+.section-left {
+  width: 60%;
+}
+
+.section-left img {
+  width: 100%;
+}
+
+/*
+
 .jumbotron {
   display: flex;
   background-color: hsla(0, 100%, 35%, 0.8);
@@ -72,9 +87,8 @@ nav a:hover {
 }
 
 .jumbotron img{
-  width: 60%;
+  width: 100%;
   height: auto;
-  margin: 2rem 1.5rem;
 }
 
 .jumbotron-header span{
@@ -98,16 +112,15 @@ nav a:hover {
   padding: 0.5rem;
 }
 
-/*banners*/
-.banner {
+.section {
   display: flex;
 }
 
-.banner h1 {
+.section h1 {
   margin-top: 2rem;
 }
 
-.banner-left {
+.section-left {
   width: 60%;
   margin: 2rem 0;
   padding: 0 1.5rem;
@@ -115,7 +128,7 @@ nav a:hover {
   flex-direction: column;
 }
 
-#bannerinfo {
+#sectioninfo {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
 }
@@ -125,7 +138,7 @@ nav a:hover {
   height: auto;
 }
 
-.banner-right {
+.section-right {
   display: flex;
   flex-direction: column;
   width: 40%;
@@ -166,13 +179,13 @@ h3 {
   flex-direction: column;
   justify-content: center;
   margin: 2rem;
+  width: 65%;
 }
 
 .mid {
   margin: .5rem 0;
 }
 
-/*cards*/
 .cards {
   background-color: hsla(0, 100%, 35%, 0.8);
   width: 100%;
@@ -224,4 +237,10 @@ h3 {
 .middle {
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
