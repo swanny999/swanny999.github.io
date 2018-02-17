@@ -16,7 +16,7 @@ a {
 }
 
 /*header and nav*/
-#headermobile {
+#mobilenav {
   display: none;
 }
 
@@ -57,17 +57,6 @@ nav a {
 
 nav a:hover {
   color: hsl(0, 100%, 35%);
-}
-
-@media only screen and (orientation: portrait), (max-width: 760px) {
-  #desktopnav {
-    display: none;
-  }
-
-  #mobilenav {
-    display: flex;
-    justify-content: space-around;
-  }
 }
 
 /*all sections*/
@@ -161,7 +150,6 @@ h3 {
 #one .section-right h1,
 #one .section-right a {
   width: 80%;
-  border: solid black 1px;
 }
 
 #one .section-right span:nth-child(2) {
@@ -179,31 +167,6 @@ h3 {
   color: hsla(0, 100%, 35%, 0.8);
 }
 
-@media only screen and (orientation: portrait), (max-width: 760px) {
-  .section {
-    flex-direction: column;
-  }
-
-  .section-left,
-  .section-right {
-    margin: 0;
-    width: 100%;
-  }
-
-  .section-right {
-    padding: 2rem 0;
-  }
-
-  #one .section-right span,
-  #one .section-right h1,
-  #one .section-right a {
-    width: auto;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    display: block;
-  }
-}
-
 /*secton 2*/
 .imgmobile {
   display: none;
@@ -216,29 +179,6 @@ h3 {
 
 #source {
   margin-top: 2.5rem;
-}
-
-@media only screen and (orientation: portrait), (max-width: 760px) {
-  #two .section-left {
-    display: none;
-  }
-
-  .section-right {
-    width: 100%;
-  }
-
-  .tab {
-    flex-direction: column;
-  }
-
-  .imgdesktop {
-    display: none;
-  }
-
-  .imgmobile{
-    display: inline-block;
-  }
-
 }
 
 /*section 3*/
@@ -311,4 +251,157 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
+}
+
+/*Mobile*/
+@media only screen and (orientation: portrait), (max-width: 760px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .section-left,
+  .section-right {
+    margin: 0;
+    width: 100%;
+  }
+
+  .section-right {
+    padding: 2rem 0;
+  }
+
+  #one .section-right span,
+  #one .section-right h1,
+  #one .section-right a {
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (orientation: portrait), (max-width: 760px) {
+  /*nav*/
+  #desktopnav {
+    display: none;
+  }
+
+  #mobilenav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /*section1*/
+  .section {
+    flex-direction: column;
+  }
+
+  .section-left,
+  .section-right {
+    margin: 0;
+    width: auto;
+  }
+
+  .section-right {
+    padding: 2rem 1rem;
+  }
+
+  #one .section-right span,
+  #one .section-right h1,
+  #one .section-right a {
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  /*section 2*/
+  #two .section-left {
+    display: none;
+  }
+
+  #two .section-right {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tab .image-container,
+  .tab .tab-info {
+    width: auto;
+    margin: 0 1rem;;
+  }
+
+  .tab-info {
+    padding: 4rem 1rem;
+    font-size: 1.5rem;
+  }
+
+  .tab-info h3 {
+    font-size: 2rem;
+  }
+
+  .tab {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .tab:hover {
+    background-color: hsl(60, 22%, 90%);
+  }
+
+  .imgdesktop {
+    display: none;
+  }
+
+  .imgmobile{
+    display: inline-block;
+  }
+
+  /*section 3*/
+  #three img,
+  #three span {
+    display: none;
+  }
+
+  #three .row,
+  .middle {
+   flex-direction: column;
+   margin: 0;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-info {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .cards-container {
+    margin-bottom: 2rem;
+  }
+
+  /*section 4*/
+  #thesis {
+    margin-bottom: 1rem;
+  }
+
+  #four .section-right,
+  #four h3,
+  #four span {
+    display: none;
+  }
+
+  /*footer*/
+  footer {
+    margin-top: 1.5rem;
+    border-top: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  footer nav {
+    display: none;
+  }
 }
