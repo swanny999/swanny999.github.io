@@ -255,6 +255,17 @@ footer {
 
 /*Mobile*/
 @media only screen and (orientation: portrait), (max-width: 760px) {
+  /*nav*/
+  #desktopnav {
+    display: none;
+  }
+
+  #mobilenav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /*section1*/
   .section {
     flex-direction: column;
   }
@@ -276,40 +287,10 @@ footer {
     margin-left: 1rem;
     margin-right: 1rem;
   }
-}
 
-@media only screen and (orientation: portrait), (max-width: 760px) {
-  /*nav*/
-  #desktopnav {
-    display: none;
-  }
-
-  #mobilenav {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  /*section1*/
-  .section {
-    flex-direction: column;
-  }
-
-  .section-left,
-  .section-right {
-    margin: 0;
-    width: auto;
-  }
-
-  .section-right {
-    padding: 2rem 1rem;
-  }
-
-  #one .section-right span,
-  #one .section-right h1,
-  #one .section-right a {
-    width: auto;
+  #one .section-right span:nth-child(2) {
+    margin: 3rem 0;
     margin-left: 1rem;
-    margin-right: 1rem;
   }
 
   /*section 2*/
