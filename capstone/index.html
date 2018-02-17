@@ -7,7 +7,7 @@
     <link href=".\resources\css\style.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header id="desktopnav">
       <div id="logo">
         <img src=".\resources\capstone_colmar_assets\images\ic-logo.svg" />
         <h3><span class="maroon">COLMAR</span>ACADEMY</h3>
@@ -18,6 +18,12 @@
         <span><a href="">For Companies</a></span>
         <span><a href="">Sign in</a></span>
       </nav>
+    </header>
+    <header id="mobilenav">
+      <a href=""><img src=".\resources\capstone_colmar_assets\images\ic-logo.svg" /></a>
+      <a href=""><img src=".\resources\capstone_colmar_assets\images\ic-on-campus.svg" /></a>
+      <a href=""><img src=".\resources\capstone_colmar_assets\images\ic-online.svg" /></a>
+      <a href=""><img src=".\resources\capstone_colmar_assets\images\ic-login.svg" /></a>
     </header>
     <div class="section" id="one">
       <div class="section-left">
@@ -47,7 +53,8 @@
       <div class="section-right">
         <div class="tab">
           <div class="image-container">
-            <img src=".\resources\capstone_colmar_assets\images\information-orientation.jpg" />
+            <img class="imgdesktop" src=".\resources\capstone_colmar_assets\images\information-orientation.jpg" />
+            <img class="imgmobile" src=".\resources\capstone_colmar_assets\images\information-orientation-mobile.jpg" />
           </div>
           <div class="tab-info">
             <h3>Orientation Date</h3>
@@ -57,7 +64,8 @@
         </div>
         <div class="tab">
           <div class="image-container">
-            <img class="tab-image" src=".\resources\capstone_colmar_assets\images\information-campus.jpg" />
+            <img class="imgdesktop" src=".\resources\capstone_colmar_assets\images\information-campus.jpg" />
+            <img class="imgmobile" src=".\resources\capstone_colmar_assets\images\information-campus-mobile.jpg" />
           </div>
           <div class="tab-info">
             <h3>Our campus</h3>
@@ -67,7 +75,8 @@
         </div>
         <div class="tab">
           <div class="image-container">
-            <img src=".\resources\capstone_colmar_assets\images\information-guest-lecture.jpg" />
+            <img class="imgdesktop" src=".\resources\capstone_colmar_assets\images\information-guest-lecture.jpg" />
+            <img class="imgmobile" src=".\resources\capstone_colmar_assets\images\information-guest-lecture-mobile.jpg" />
           </div>
           <div class="tab-info">
             <h3>Out guest lecture</h3>
@@ -152,7 +161,7 @@
       <div class="section-right">
         <div class="tab">
           <div class="image-container">
-            <img class="tab-image" src="C:\Projects\swanny999.github.io\capstone\resources\capstone_colmar_assets\images\thesis-fisma.jpg" />
+            <img class="tab-image" src=".\resources\capstone_colmar_assets\images\thesis-fisma.jpg" />
           </div>
           <div class="tab-info">
             <h3>Fisma: Design and prototype</h3>
